@@ -97,7 +97,9 @@ textarea {
         0 10px 40px rgba(0,0,0,.06);
 
 }
-
+.header {
+    padding: 5px 0;
+}
 .header__inner {
 
     display: flex;
@@ -190,7 +192,7 @@ textarea {
 
 /* ================= MOBILE MENU ================= */
 
-.menu-btn {
+/* .menu-btn {
 
     display: none;
 
@@ -212,7 +214,7 @@ textarea {
     margin: 5px;
 
     background: var(--dark);
-}
+} */
 
 
 /* ================= HERO ================= */
@@ -1291,7 +1293,9 @@ textarea {
 /* ================= RESPONSIVE ================= */
 
 @media(max-width: 900px) {
-
+.header__inner{
+    justify-content: center;
+}
     .nav,
     .header__button {
 
@@ -1348,11 +1352,11 @@ textarea {
         position: fixed;
 
         display: flex;
-
-        bottom: 15px;
-
-        left: 15px;
-        right: 15px;
+        align-items: center;
+        justify-content: space-evenly;
+        bottom: 0px;
+        left: 0;
+        right: 0;
 
         z-index: 2000;
 
@@ -1362,9 +1366,9 @@ textarea {
 
         border: 1px solid var(--border);
 
-        border-radius: 20px;
+        border-radius: 20px 20px 0 0;
 
-        padding: 8px;
+        padding: 2px 5px;
 
         box-shadow:
             0 20px 50px rgba(0,0,0,.15);
@@ -1372,17 +1376,15 @@ textarea {
 
     .mobile-nav__item {
 
-        flex: 1;
 
         display: flex;
-
+        flex: 1;
         flex-direction: column;
 
         align-items: center;
 
-        gap: 3px;
 
-        padding: 8px;
+        padding: 2px;
 
         border-radius: 14px;
 
@@ -1402,7 +1404,9 @@ textarea {
 
         background: var(--dark);
     }
-
+    .about__box {
+        width: 90vw;
+    }
 }
 
 
@@ -1453,7 +1457,7 @@ textarea {
     }
 
     .about__box {
-
+        width: 90vw;
         min-height: 300px;
     }
 
