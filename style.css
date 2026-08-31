@@ -40,7 +40,9 @@
 html {
     width: 100%;
     max-width: 100%;
+
     scroll-behavior: smooth;
+
     overflow-x: hidden;
 }
 
@@ -58,6 +60,7 @@ body {
 }
 
 img {
+    display: block;
     max-width: 100%;
 }
 
@@ -139,8 +142,6 @@ button {
 }
 
 .logo img {
-    display: block;
-
     width: 110px;
     max-width: 100%;
 }
@@ -250,6 +251,7 @@ button {
 
 .hero__text {
     flex: 1;
+
     min-width: 0;
 }
 
@@ -262,7 +264,8 @@ button {
 
     border-radius: 50px;
 
-    background: rgba(6, 74, 150, .08);
+    background:
+        rgba(6, 74, 150, .08);
 
     color: var(--primary);
 
@@ -272,7 +275,8 @@ button {
 .hero h1 {
     max-width: 700px;
 
-    font-size: clamp(42px, 6vw, 75px);
+    font-size:
+        clamp(42px, 6vw, 75px);
 
     line-height: 1.2;
 
@@ -335,7 +339,8 @@ button {
         );
 
     box-shadow:
-        0 15px 30px rgba(6, 74, 150, .2);
+        0 15px 30px
+        rgba(6, 74, 150, .2);
 }
 
 .btn--outline {
@@ -361,6 +366,7 @@ button {
     position: relative;
 
     width: 45%;
+
     min-width: 0;
     min-height: 480px;
 
@@ -392,17 +398,22 @@ button {
         rotateCircle 15s linear infinite;
 
     box-shadow:
-        0 40px 100px rgba(0, 20, 84, .25);
+        0 40px 100px
+        rgba(0, 20, 84, .25);
 }
 
 .hero__card {
     position: absolute;
 
+    max-width: calc(100% - 20px);
+
     padding: 30px;
 
-    background: rgba(255, 255, 255, .9);
+    background:
+        rgba(255, 255, 255, .9);
 
-    backdrop-filter: blur(15px);
+    backdrop-filter:
+        blur(15px);
 
     border-radius: 20px;
 
@@ -413,8 +424,6 @@ button {
     flex-direction: column;
 
     gap: 8px;
-
-    max-width: calc(100% - 20px);
 }
 
 .hero__card--main {
@@ -535,7 +544,8 @@ button {
 .section-heading {
     max-width: 650px;
 
-    margin: 0 auto 60px;
+    margin:
+        0 auto 60px;
 
     text-align: center;
 }
@@ -552,7 +562,8 @@ button {
 .section-heading h2 {
     margin: 12px 0;
 
-    font-size: clamp(30px, 5vw, 45px);
+    font-size:
+        clamp(30px, 5vw, 45px);
 }
 
 .section-heading p {
@@ -775,7 +786,8 @@ button {
     color: white;
 
     box-shadow:
-        0 40px 80px rgba(0, 20, 84, .2);
+        0 40px 80px
+        rgba(0, 20, 84, .2);
 }
 
 .about__box span {
@@ -811,7 +823,8 @@ button {
 .about__features {
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        1fr 1fr;
 
     gap: 20px;
 }
@@ -981,7 +994,8 @@ button {
         );
 
     box-shadow:
-        0 30px 80px rgba(0, 20, 84, .2);
+        0 30px 80px
+        rgba(0, 20, 84, .2);
 }
 
 .cta h2 {
@@ -1110,7 +1124,8 @@ button {
     border-color: var(--primary);
 
     box-shadow:
-        0 0 0 4px rgba(6, 74, 150, .08);
+        0 0 0 4px
+        rgba(6, 74, 150, .08);
 }
 
 
@@ -1162,7 +1177,8 @@ button {
     justify-content: center;
 
     border:
-        1px solid rgba(255, 255, 255, .2);
+        1px solid
+        rgba(255, 255, 255, .2);
 
     border-radius: 10px;
 }
@@ -1181,19 +1197,23 @@ button {
 }
 
 .reveal[data-animation="fade-up"] {
-    transform: translateY(70px);
+    transform:
+        translateY(70px);
 }
 
 .reveal[data-animation="fade-right"] {
-    transform: translateX(80px);
+    transform:
+        translateX(80px);
 }
 
 .reveal[data-animation="fade-left"] {
-    transform: translateX(-80px);
+    transform:
+        translateX(-80px);
 }
 
 .reveal[data-animation="zoom-in"] {
-    transform: scale(.8);
+    transform:
+        scale(.8);
 }
 
 .reveal.is-visible {
@@ -1233,11 +1253,13 @@ button {
 
     0%,
     100% {
-        transform: translateY(0);
+        transform:
+            translateY(0);
     }
 
     50% {
-        transform: translateY(-15px);
+        transform:
+            translateY(-15px);
     }
 
 }
@@ -1245,11 +1267,13 @@ button {
 @keyframes rotateCircle {
 
     from {
-        transform: rotate(0deg);
+        transform:
+            rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg);
+        transform:
+            rotate(360deg);
     }
 
 }
@@ -1257,19 +1281,22 @@ button {
 @keyframes consultationPulse {
 
     0% {
-        transform: scale(1);
+        transform:
+            scale(1);
 
         opacity: 1;
     }
 
     70% {
-        transform: scale(1.15);
+        transform:
+            scale(1.15);
 
         opacity: 0;
     }
 
     100% {
-        transform: scale(1.15);
+        transform:
+            scale(1.15);
 
         opacity: 0;
     }
@@ -1324,7 +1351,8 @@ button {
     cursor: pointer;
 
     box-shadow:
-        0 15px 35px rgba(0, 20, 84, .25);
+        0 15px 35px
+        rgba(0, 20, 84, .25);
 
     transition: .35s ease;
 }
@@ -1337,7 +1365,8 @@ button {
     inset: -5px;
 
     border:
-        1px solid rgba(6, 74, 150, .35);
+        1px solid
+        rgba(6, 74, 150, .35);
 
     border-radius: inherit;
 
@@ -1351,7 +1380,8 @@ button {
         scale(1.03);
 
     box-shadow:
-        0 20px 45px rgba(0, 20, 84, .35);
+        0 20px 45px
+        rgba(0, 20, 84, .35);
 }
 
 .consultation-btn__icon {
@@ -1431,7 +1461,8 @@ button {
         rgba(255, 255, 255, .97);
 
     box-shadow:
-        0 30px 100px rgba(0, 20, 84, .25);
+        0 30px 100px
+        rgba(0, 20, 84, .25);
 
     transform:
         translateY(30px)
@@ -1485,7 +1516,8 @@ button {
 
     color: white;
 
-    transform: rotate(90deg);
+    transform:
+        rotate(90deg);
 }
 
 
@@ -1526,7 +1558,8 @@ button {
     font-size: 25px;
 
     box-shadow:
-        0 12px 30px rgba(6, 74, 150, .2);
+        0 12px 30px
+        rgba(6, 74, 150, .2);
 }
 
 .consultation-modal__header > span {
@@ -1584,12 +1617,15 @@ button {
 }
 
 .consultation-option:hover {
-    border-color: var(--primary);
+    border-color:
+        var(--primary);
 
-    transform: translateX(-6px);
+    transform:
+        translateX(-6px);
 
     box-shadow:
-        0 10px 30px rgba(0, 20, 84, .08);
+        0 10px 30px
+        rgba(0, 20, 84, .08);
 }
 
 .consultation-option__icon {
@@ -1647,7 +1683,8 @@ button {
 }
 
 .consultation-option:hover b {
-    transform: translateX(-5px);
+    transform:
+        translateX(-5px);
 }
 
 
@@ -1680,10 +1717,12 @@ button {
 
 
 /* =====================================================
-   MOBILE / TABLET
+   TABLET / MOBILE
 ===================================================== */
 
 @media (max-width: 900px) {
+
+    /* HEADER */
 
     .header__inner {
         justify-content: center;
@@ -1747,6 +1786,7 @@ button {
 
     .about__box {
         width: 100%;
+
         max-width: 100%;
     }
 
@@ -1772,7 +1812,8 @@ button {
     }
 
     .process-item {
-        flex-basis: calc(50% - 10px);
+        flex-basis:
+            calc(50% - 10px);
     }
 
 
@@ -1811,7 +1852,8 @@ button {
             20px 20px 0 0;
 
         box-shadow:
-            0 20px 50px rgba(0, 0, 0, .15);
+            0 20px 50px
+            rgba(0, 0, 0, .15);
     }
 
     .mobile-nav__item {
@@ -1845,7 +1887,9 @@ button {
 
         background: var(--dark);
     }
-
+.consultation-btn{
+   bottom:75px;
+}
 }
 
 
@@ -1855,15 +1899,18 @@ button {
 
 @media (max-width: 600px) {
 
+    /* CONTAINER */
+
     .container {
-        width: calc(100% - 30px);
+        width:
+            calc(100% - 30px);
 
         max-width:
             calc(100% - 30px);
     }
 
 
-    /* SECTIONS */
+    /* SECTION */
 
     .section {
         padding: 80px 0;
@@ -1877,10 +1924,39 @@ button {
     }
 
     .hero__visual {
+        width: 100%;
+        max-width: 100%;
+
         min-height: 330px;
 
         overflow: hidden;
+
+        /*
+         * مهم:
+         * خود hero visual روی موبایل
+         * هیچ translateX ندارد.
+         */
+        transform: none !important;
     }
+
+    /*
+     * اگر hero visual کلاس reveal داشته باشد،
+     * انیمیشن آن از پایین به بالا انجام می‌شود.
+     */
+
+    .hero__visual.reveal[data-animation="fade-left"],
+    .hero__visual.reveal[data-animation="fade-right"] {
+        transform:
+            translateY(30px) !important;
+    }
+
+    .hero__visual.reveal.is-visible {
+        transform:
+            translateY(0) !important;
+    }
+
+
+    /* HERO CIRCLE */
 
     .hero__circle {
         width: 280px;
@@ -1890,11 +1966,17 @@ button {
         max-height: 75vw;
     }
 
+
+    /* HERO CARD */
+
     .hero__card {
         padding: 20px;
 
         max-width: 75%;
     }
+
+
+    /* FLOATING CARDS */
 
     .floating-card {
         max-width: 42%;
@@ -1917,6 +1999,7 @@ button {
 
     .card-three {
         bottom: 10px;
+
         right: 50%;
 
         transform:
@@ -1924,7 +2007,14 @@ button {
     }
 
 
-    /* ANIMATION */
+    /* REVEAL */
+
+    /*
+     * فقط عناصر fade-left/right معمولی
+     * فاصله افقی کمی دارند.
+     *
+     * hero__visual بالاتر override شده.
+     */
 
     .reveal[data-animation="fade-right"] {
         transform:
@@ -1957,7 +2047,8 @@ button {
     .stats__grid {
         display: grid;
 
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:
+            1fr 1fr;
     }
 
     .stat {
@@ -1973,6 +2064,8 @@ button {
 
     .about__box {
         width: 100%;
+
+        max-width: 100%;
 
         min-height: 300px;
     }
@@ -1990,7 +2083,7 @@ button {
     }
 
 
-    /* SERVICE */
+    /* SERVICES */
 
     .service {
         gap: 15px;
@@ -2003,6 +2096,8 @@ button {
 
     .cta__inner {
         width: 100%;
+
+        max-width: 100%;
 
         flex-direction: column;
 
@@ -2027,10 +2122,13 @@ button {
     }
 
 
-    /* CONSULTATION BUTTON */
+    /* =================================================
+       CONSULTATION BUTTON
+    ================================================= */
 
     .consultation-btn {
         right: 15px;
+
         bottom: 75px;
 
         width: 52px;
@@ -2055,7 +2153,9 @@ button {
     }
 
 
-    /* MODAL */
+    /* =================================================
+       CONSULTATION MODAL
+    ================================================= */
 
     .consultation-modal {
         align-items: flex-end;
@@ -2065,9 +2165,11 @@ button {
 
     .consultation-modal__box {
         width: 100%;
+
         max-width: 100%;
 
-        padding: 25px 20px;
+        padding:
+            25px 20px;
 
         border-radius:
             25px 25px 20px 20px;
