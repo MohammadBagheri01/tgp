@@ -78,7 +78,7 @@ textarea {
 
     top: 0;
     right: 0;
-    width:100%;
+    width:100vw;
 
     z-index: 1000;
 
@@ -1355,7 +1355,7 @@ textarea {
         align-items: center;
         justify-content: space-evenly;
         bottom: 0px;
-        width:100%;
+        width:100vw;
         right: 0;
 
         z-index: 2000;
